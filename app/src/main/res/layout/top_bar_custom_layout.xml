@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/teal_700"
+    android:gravity="center"
+    android:paddingRight="8pt"
+    android:paddingVertical="1pt"
+    android:layout_height="19pt">
+
+
+    <TextView
+        android:textSize="9pt"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginLeft="10pt"
+        android:layout_weight="1"
+        android:gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+
+        <Button
+            android:layout_gravity="center"
+            android:elevation="0sp"
+            android:gravity="center"
+            android:id="@+id/notificationMenuButtonId"
+            android:foreground="@drawable/baseline_notifications_24"
+            android:layout_width="13pt"
+            android:foregroundTint="@color/white"
+            android:layout_height="13pt"
+            android:layout_marginEnd="10dp"/>
+
+        <Button
+            android:layout_gravity="center"
+            android:elevation="0sp"
+            android:gravity="center"
+            android:id="@+id/menu_search_button"
+            android:foreground="@drawable/ic_baseline_search_24"
+            android:layout_width="13pt"
+            android:foregroundTint="@color/white"
+            android:layout_height="13pt"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="15pt"
+            android:id="@+id/currentUserProfile"
+            android:src="@drawable/ic_baseline_more_vert_24"
+            app:riv_oval="true"
+            android:background="?attr/selectableItemBackground"
+            android:layout_gravity="center"
+            android:layout_marginLeft="7pt"
+            app:riv_corner_radius="25pt"
+            android:layout_height="15pt"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

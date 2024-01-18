@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingHorizontal="5pt"
+    android:layout_marginTop="2pt"
+    android:paddingVertical="3pt"
+    android:clickable="true"
+    android:layout_marginHorizontal="5pt"
+    android:background="@drawable/rounded_border_gray_bg"
+    android:id="@+id/parentItem"
+    android:layout_height="wrap_content">
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        >
+        
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="27pt"
+            android:id="@+id/icon"
+            app:riv_corner_radius="9pt"
+            app:riv_oval="true"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder"
+            android:layout_height="27pt"/>
+        
+        <LinearLayout
+            android:paddingLeft="8pt"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+           
+            <LinearLayout
+android:gravity="center"
+android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+<!--    -->
+<!--                <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:paddingEnd="15dp"-->
+<!--                    >-->
+    
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="8pt"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:id="@+id/title"
+                    android:text="..."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="30"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+    
+                    <ImageView
+android:layout_marginLeft="3pt"
+                        android:id="@+id/verificationFlagImageViewId"
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:src="@drawable/baseline_check_circle_24"
+                        app:tint="@color/secondary_app_color"
+                        android:layout_gravity="center"
+                        android:visibility="invisible"
+                        app:layout_constraintStart_toEndOf="@id/title"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+                    
+                    
+                    
+        
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+    
+                <ImageButton
+                    android:id="@+id/moreActionButtonId"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/ic_baseline_error_outline_24"
+                    android:backgroundTint="@color/error_red"
+                    android:layout_gravity="top"
+                    />
+    
+            </LinearLayout>
+            <TextView
+                android:ellipsize="end"
+                android:maxLength="50"
+                android:id="@+id/description"
+                android:text="Learn Era User"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        
+        </LinearLayout>
+    
+    </LinearLayout>
+    
+    
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        style="?attr/borderlessButtonStyle"
+        android:textSize="5pt"
+        android:id="@+id/verifyAccountActionButtonId"
+        android:text="Verify"
+        android:layout_marginTop="1pt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:visibility="invisible"
+        />
+    
+    <Button
+        style="?attr/borderlessButtonStyle"
+        android:textSize="5pt"
+        android:id="@+id/declineActionButtonId"
+        android:text="Decline"
+        android:layout_marginTop="1pt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:visibility="invisible"
+        />
+    <TextView
+android:visibility="gone"
+        android:textSize="5pt"
+        android:id="@+id/dateCreated"
+        android:textAlignment="textEnd"
+        android:text="moments ago"
+        android:layout_marginTop="1pt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+    <TextView
+ android:background="@drawable/rounded_border_primary_bg"
+        android:id="@+id/followActionTextViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="9pt"
+        android:textAlignment="textEnd"
+        android:text="Follow"
+android:paddingHorizontal="10pt"
+android:paddingVertical="4pt"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/secondary_app_color"
+        android:layout_marginTop="1pt"
+        android:layout_marginLeft="3dp"
+        />
+    </LinearLayout>
+
+</LinearLayout>
